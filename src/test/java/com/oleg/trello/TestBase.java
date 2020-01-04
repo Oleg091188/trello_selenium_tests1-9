@@ -5,14 +5,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
-    WebDriver wd;
+ static WebDriver wd;
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp(){
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -23,7 +25,7 @@ public class TestBase {
         return wd.findElements(locator).size()>0;
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown(){
         wd.quit();
     }

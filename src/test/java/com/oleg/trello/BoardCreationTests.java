@@ -1,5 +1,6 @@
 package com.oleg.trello;
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -10,15 +11,25 @@ public class BoardCreationTests extends  TestBase{
             loginAtlassianAcc();
         }
     }
-    @Test
-    public void testBoardCreationFromHeader() throws InterruptedException {
+@Test
+public void testBoardCreationFromHeader() throws InterruptedException {
+    int before = getBoardsCount();
+
         clickOnPlusButton();
         selectCreateBoardFromDropDown();
         fillBoardForm("qa22"+ System.currentTimeMillis());
         confirmBoardCreation();
         pause(15000);
         returnToHomePage();
+
+        int after = getBoardsCount();
+        Assert.assertEquals(after,before+1);
     }
+
+    public int getBoardsCount() {
+        return wd.findElements(By.xpath("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
+    }
+
 
     public void returnToHomePage() {
         click(By.name("house"));

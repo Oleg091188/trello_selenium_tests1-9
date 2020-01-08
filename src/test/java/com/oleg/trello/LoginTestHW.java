@@ -7,26 +7,26 @@ import org.testng.annotations.Test;
 public class LoginTestHW extends TestBase {
     @BeforeMethod
     public void ensurePreconditions(){
-        if(isAvatarPresentOnHeader()){
-            logout();
+        if(app.isAvatarPresentOnHeader()){
+            app.logout();
         }
     }
 
     @Test
     public void testLogInWithAtlassianAcc() throws InterruptedException {
-        clickLoginLink();
-        fillLoginFormAtlassianAcc("qaolegtest@gmail.com", "qa221988");
-        pause(20000);
+        app.clickLoginLink();
+        app.fillLoginFormAtlassianAcc("qaolegtest@gmail.com", "qa221988");
+        app.pause(20000);
         Assert.assertTrue
-                (isAvatarPresentOnHeader());
+                (app.isAvatarPresentOnHeader());
     }
     @Test
     public void testLogInWithAtlassianAcc2() throws InterruptedException {
-        clickLoginLink();
-        fillLoginFormAtlassianAcc("qaolegtest@gmail.com", "qa221988");
-        pause(20000);
+        app.clickLoginLink();
+        app.fillLoginFormAtlassianAcc("qaolegtest@gmail.com", "qa221988");
+        app.pause(20000);
         Assert.assertTrue
-                (isAvatarPresentOnHeader());
+                (app.isAvatarPresentOnHeader());
     }
 
 }

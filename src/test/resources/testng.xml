@@ -5,7 +5,7 @@
         <classes>
             <class name="com.oleg.trello.LoginTestHW" />
             <class name="com.oleg.trello.BoardCreationTests" />
-            <class name="com.oleg.trello.BoardDeleteTests" />
+
         </classes>
     </test>
 </suite>

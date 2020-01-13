@@ -1,8 +1,8 @@
 
 package com.oleg.trello;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+        import org.testng.Assert;
+        import org.testng.annotations.BeforeMethod;
+        import org.testng.annotations.Test;
 
 public class LoginTestHW extends TestBase {
     @BeforeMethod
@@ -28,5 +28,4 @@ public class LoginTestHW extends TestBase {
         Assert.assertTrue
                 (app.isAvatarPresentOnHeader());
     }
-
 }

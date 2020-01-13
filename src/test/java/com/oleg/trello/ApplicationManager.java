@@ -10,26 +10,27 @@ import org.openqa.selenium.remote.BrowserType;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-         WebDriver wd;
+    BoardHelper boardHelper;
+    WebDriver wd;
 
     public void init() {
-        String browser = BrowserType.FIREFOX;
-        if(browser.equals(BrowserType.CHROME)){
+        String browser = BrowserType.CHROME;
+        if (browser.equals(BrowserType.CHROME)) {
             wd = new ChromeDriver();
-        } else
-        if(browser.equals(BrowserType.FIREFOX)){
+        } else if (browser.equals(BrowserType.FIREFOX)) {
             wd = new FirefoxDriver();
-        } else
-        if(browser.equals(BrowserType.EDGE)){
+        } else if (browser.equals(BrowserType.EDGE)) {
             wd = new EdgeDriver();
         }
 
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         wd.get("https://trello.com/");
+
+        boardHelper = new BoardHelper(wd);
     }
 
-    public  boolean isElementPresent(By locator){
-        return wd.findElements(locator).size()>0;
+    public boolean isElementPresent(By locator) {
+        return wd.findElements(locator).size() > 0;
     }
 
     public void stop() {
@@ -64,7 +65,7 @@ public class ApplicationManager {
         wd.findElement(locator).sendKeys(text);
     }
 
-    public void clickLoginLink(){
+    public void clickLoginLink() {
 
         click(By.cssSelector("[href='/login']"));
     }
@@ -73,12 +74,12 @@ public class ApplicationManager {
 
         type(By.id("user"), "qaolegtest@gmail.com");
         Thread.sleep(10000);
-        if(wd.findElement(By.id("password")).isDisplayed()){
+        if (wd.findElement(By.id("password")).isDisplayed()) {
             type(By.id("password"), "qa221988");
         }
         click(By.id("login"));
 
-        if (isElementPresent(By.id("login-submit"))){
+        if (isElementPresent(By.id("login-submit"))) {
             click(By.id("login-submit"));
 
             type(By.id("password"), "qa221988");
@@ -111,74 +112,69 @@ public class ApplicationManager {
         click(By.cssSelector("[data-test-id='header-member-menu-button']"));
     }
 
-    public int getBoardsCount() {
-        return wd.findElements(By.cssSelector("ul.boards-page-board-section-list li")).size()-1;
-    }
-
     public void returnToHomePage() {
         click(By.name("house"));
         click(By.name("house"));
     }
 
-    public void confirmBoardCreation() {
-        click(By.cssSelector("[data-test-id='create-board-submit-button']"));
-
+    public BoardHelper getBoardHelper() {
+        return boardHelper;
     }
 
-    public void fillBoardForm(String boardName) {
-        type(By.cssSelector("[data-test-id='create-board-title-input']"), boardName);
+    public void clickLaterButton() {
+        click(By.cssSelector("[data-test-id=show-later-button]"));
     }
 
-    public void selectCreateBoardFromDropDown() {
-        click(By.xpath("//span[@name='board']/..//p"));
-
+    public int getTeamsCount() {
+        return wd.findElements(By.cssSelector("[data-test-id^=home-team-tab-section]")).size();
     }
 
-    public void createBoard() throws InterruptedException {
-        clickOnPlusButton();
-        selectCreateBoardFromDropDown();
-        fillBoardForm("qa22"+ System.currentTimeMillis());
-        confirmBoardCreation();
-        pause(15000);
-        returnToHomePage();
+    public void submitTeamCreation() {
+        click(By.cssSelector("[data-test-id='header-create-team-submit-button']"));
+    }
+
+    //public void closeInviteToTheTeamForm() {
+    //   click(By.cssSelector("[name='close']"));
+    // }
+
+    public void fillTeamCreationForm(String teamName, String teamDescr) {
+        type(By.cssSelector("[data-test-id='header-create-team-name-input']"), teamName);
+        type(By.cssSelector("[id$= description]"), teamDescr);
+    }
+
+    public void selectCreateTeamFromDropDown() {
+        click(By.cssSelector("[data-test-id='header-create-team-button']"));
     }
 
     public void clickOnPlusButton() {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
     }
 
-    public boolean isThereBoard() {
-        return getBoardsCount() >1;
+    public void settingsForThisTeam() {
+        click(By.cssSelector("[class^=icon-gear]"));
     }
 
-    public void permanentlyDeleteBoard() {
-        click(By.cssSelector(".js-delete"));
-        confirmCloseBoard();
+    public void clickOnTheTeam() {
+        click(By.cssSelector("[data-test-id^=home-team-tab-section]"));
+    }
+    public void clickOnEditTeamProfileButton() {
+        click(By.cssSelector(".js-edit-profile"));
+    }
+    public void changeTeamName() {
+        click(By.cssSelector("[name='displayName']"));
+        wd.findElement(By.cssSelector("[name='displayName']")).clear();
+        wd.findElement(By.cssSelector("[name='displayName']")).sendKeys("TestsOMG");
+        click(By.cssSelector(".primary.wide.js-submit-profile"));
+    }
+    public void submitDeletion() {
+        click(By.cssSelector("[value='Delete Forever']"));
     }
 
-    public void confirmCloseBoard() {
-        click(By.cssSelector(".js-confirm[type='submit']"));
+    public void deleteButton() {
+        click(By.xpath("//*[@class='quiet-button']"));
     }
 
-    protected void startCloseBoard() throws InterruptedException {
-        pause(5000);
-        click(By.cssSelector(".js-close-board"));
-    }
-
-    public void clickOpenMore() {
-        click(By.cssSelector(".js-open-more"));
-    }
-
-    public void openFirstBoard() {
-        click(By.xpath("//*[@class='icon-lg icon-member']/../../..//li"));
-    }
-
-    public void deleteBoard() throws InterruptedException {
-        openFirstBoard();
-        pause(10000);
-        clickOpenMore();
-        startCloseBoard();
-        confirmCloseBoard();
-        returnToHomePage();
+    public void openTeam() {
+        click(By.cssSelector("[ data-test-id^='home-team-tab-section']"));
     }
 }

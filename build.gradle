@@ -34,4 +34,12 @@ task testAll(type: Test) {
             systemProperty 'browser', "${browser}"
         }
     }
+    task testTeams(type: Test) {
+        useTestNG {
+            suites 'src/test/resources/testng-team.xml'
+        }
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+    }
 }

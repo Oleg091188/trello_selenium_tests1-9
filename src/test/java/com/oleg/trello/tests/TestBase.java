@@ -1,5 +1,6 @@
-package com.oleg.trello;
+package com.oleg.trello.tests;
 
+        import com.oleg.trello.manager.ApplicationManager;
         import org.testng.annotations.AfterSuite;
         import org.testng.annotations.BeforeSuite;
 

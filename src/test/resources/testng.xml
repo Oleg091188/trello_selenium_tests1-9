@@ -3,8 +3,8 @@
 <suite name="Trello" verbose="1" >
     <test name="SmokeTest " >
         <classes>
-            <class name="com.oleg.trello.LoginTestHW" />
-            <class name="com.oleg.trello.BoardCreationTests" />
+            <class name="com.oleg.trello.tests.LoginTestHW" />
+            <class name="com.oleg.trello.tests.BoardCreationTests" />
 
         </classes>
     </test>

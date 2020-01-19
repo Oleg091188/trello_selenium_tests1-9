@@ -1,4 +1,4 @@
-package com.oleg.trello;
+package com.oleg.trello.tests;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
@@ -7,8 +7,8 @@ public class LoginTest extends TestBase {
 
     @Test
     public void testLogIn() throws InterruptedException {
-        app.clickLoginLink();
-        app.loginWhithBothAccs();
+        app.getSession().clickLoginLink();
+        app.getSession().loginWhithBothAccs();
 
 
     }

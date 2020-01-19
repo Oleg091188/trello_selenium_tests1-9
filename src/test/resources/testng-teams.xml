@@ -3,9 +3,9 @@
 <suite name="Teams" verbose="1" >
     <test name="Team" >
         <classes>
-            <class name="com.oleg.trello.TeamCreationTests" />
-            <class name="com.oleg.trello.TeamModificationTests" />
-            <class name="com.oleg.trello.TeamDeletionTests" />
+            <class name="com.oleg.trello.tests.TeamCreationTests" />
+            <class name="com.oleg.trello.tests.TeamModificationTests" />
+            <class name="com.oleg.trello.tests.TeamDeletionTests" />
         </classes>
     </test>
 </suite>

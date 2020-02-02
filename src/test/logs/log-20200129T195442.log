@@ -1,0 +1,5 @@
+2020-01-29 19:54:52,508 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testChangeAvatarwith parameters []
+2020-01-29 19:55:54,903 INFO [Test worker] c.o.t.t.TestBase [ChangeUserAvatarTest.java:25] avatar before:
+2020-01-29 19:56:53,166 INFO [Test worker] c.o.t.t.TestBase [ChangeUserAvatarTest.java:31] avatar after:
+2020-01-29 19:56:55,243 INFO [Test worker] c.o.t.u.Listener [Listener.java:19] testChangeAvatar Passed Successful
+2020-01-29 19:56:55,244 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testChangeAvatar

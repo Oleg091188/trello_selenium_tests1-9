@@ -11,7 +11,7 @@ public class BoardHelper extends HelperBase {
     }
 
     public int getBoardsCount() {
-        return wd.findElements(By.cssSelector("ul.boards-page-board-section-list li")).size()-1;
+        return wd.findElements(By.cssSelector("//*[@class='icon-lg icon-member']/../../..//li")).size()-1;
     }
 
     public void confirmBoardCreation() {
@@ -31,7 +31,7 @@ public class BoardHelper extends HelperBase {
     public void createBoard() throws InterruptedException {
         clickOnPlusButton();
         selectCreateBoardFromDropDown();
-        fillBoardForm(new BoardData("qa22" + System.currentTimeMillis()));
+        fillBoardForm(new BoardData().setBoardName("qa22" + System.currentTimeMillis()));
         confirmBoardCreation();
         pause(15000);
         returnToHomePage();

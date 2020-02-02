@@ -1,0 +1,13 @@
+2020-01-26 19:21:54,367 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testLogInWithAtlassianAccwith parameters []
+2020-01-26 19:22:47,608 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testLogInWithAtlassianAcc Failed
+2020-01-26 19:22:47,609 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#passwor"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53116}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 70951350917612b1006b09e419db92f2
+*** Element info: {Using=id, value=passwor}
+2020-01-26 19:22:47,620 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testLogInWithAtlassianAcc Failed
+2020-01-26 19:22:47,620 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] java.lang.NullPointerException

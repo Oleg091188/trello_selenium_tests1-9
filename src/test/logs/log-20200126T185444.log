@@ -1,0 +1,3 @@
+2020-01-26 18:55:20,911 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testLogInWithAtlassianAccwith parameters []
+2020-01-26 18:56:17,117 INFO [Test worker] c.o.t.u.Listener [Listener.java:17] testLogInWithAtlassianAcc Passed Successful
+2020-01-26 18:56:17,118 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testLogInWithAtlassianAcc

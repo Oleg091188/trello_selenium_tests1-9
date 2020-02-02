@@ -1,0 +1,2 @@
+2020-01-22 20:49:56,529 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:20] Start TesttestLogInWithAtlassianAcc
+2020-01-22 20:50:55,620 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:26] Stop TesttestLogInWithAtlassianAcc

@@ -13,13 +13,13 @@ public class BoardCreationTests extends  TestBase{
             app.getSession().loginAtlassianAcc();
         }
     }
-@Test
-public void testBoardCreationFromHeader() throws InterruptedException {
+@Test(dataProvider = "boardList", dataProviderClass = DataProviders.class)
+public void testBoardCreationFromHeader(BoardData board) throws InterruptedException {
     int before = app.getBoard().getBoardsCount();
 
         app.getBoard().clickOnPlusButton();
         app.getBoard().selectCreateBoardFromDropDown();
-        app.getBoard().fillBoardForm(new BoardData("qa22" + System.currentTimeMillis()));
+        app.getBoard().fillBoardForm(new BoardData().setBoardName("qa22" + System.currentTimeMillis()));
         app.getBoard().confirmBoardCreation();
         app.getBoard().pause(15000);
         app.getBoard().returnToHomePage();

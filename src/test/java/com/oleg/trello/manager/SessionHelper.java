@@ -2,6 +2,10 @@ package com.oleg.trello.manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.io.File;
+import java.util.ArrayList;
 
 public class SessionHelper extends HelperBase{
     HeaderHelper header = new HeaderHelper(wd);
@@ -78,7 +82,58 @@ public class SessionHelper extends HelperBase{
         click(By.cssSelector("[data-test-id='header-member-menu-logout']"));
     }
 
-    public void clickOnAvatar() {
-        click(By.cssSelector("[data-test-id='header-member-menu-button']"));
+//    public void clickOnAvatar() {
+//        click(By.cssSelector("[data-test-id='header-member-menu-button']"));
+//    }
+//
+//    public void openUserProfileFromDropDown() {
+//        click(By.cssSelector("[data-test-id='header-member-menu-profil']"));
+//    }
+//
+//    public void goToAtlassianAccount() {
+//        click(By.cssSelector("[href='id.atlassian.com/manage-profile']"));
+////        wd.getWindowHandles();
+////        wd.switchTo();
+//    }
+//
+//    public void addAvatarImage() {
+//    }
+public void clickOnAvatar() {
+    click(By.cssSelector("[data-test-id='header-member-menu-button']"));
+}
+
+    public void openProfileAndVisibility() {
+        click(By.cssSelector("[data-test-id='header-member-menu-profile']"));
+    }
+
+    public void openAndSwitchToAtlassianProfile() {
+        click(By.cssSelector("[href $=manage-profile]"));
+        String trellow = wd.getWindowHandle();
+//    System.out.println(trellow);
+        ArrayList<String> availableWindows = new ArrayList(wd.getWindowHandles());
+        if (!availableWindows.isEmpty()) {
+            wd.switchTo().window(availableWindows.get(1));
+        }
+    }
+
+    public void addPictureAndCloseWindow() throws InterruptedException {
+        new Actions(wd)
+                .moveToElement(wd.findElement(By.cssSelector("[data-test-selector='profile-avatar']"))).perform();
+        click(By.cssSelector("[data-test-selector='profile-hover-info']"));
+        if (isElementPresent(By.cssSelector("[role=menu]"))) {
+            click(By.xpath("//*[@role='menu']//span[@role='menuitem'][1]"));
+        }
+        attach(By.cssSelector("#image-input"), new File("C:/Users/Home/Documents/GitHub/trello_selenium_tests1-9/src/test/resources/mem_roma_31_08072220.jpg"));
+        click(By.xpath("//button[@class='css-1yx6h60']//span[@class='css-t5emrf']"));
+        pause(5000);
+        wd.close();
+        pause(3000);
+        ArrayList<String> availableWindows = new ArrayList(wd.getWindowHandles());
+        if (!availableWindows.isEmpty()) {
+            wd.switchTo().window(availableWindows.get(0));
+            pause(5000);
+            wd.navigate().refresh();
+            pause(5000);
+        }
     }
 }

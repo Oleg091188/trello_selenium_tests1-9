@@ -15,6 +15,7 @@ dependencies {
     implementation 'org.testng:testng:7.0.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'junit:junit:4.12'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
 }
 test{
     useTestNG()
@@ -42,4 +43,5 @@ task testAll(type: Test) {
             systemProperty 'browser', "${browser}"
         }
     }
+
 }

@@ -1,19 +1,26 @@
 package com.oleg.trello.manager;
 
+import com.google.common.io.Files;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+
     BoardHelper board;
     TeamHelper team;
     SessionHelper session;
     HeaderHelper header;
     WebDriver wd;
+
 //start
     public void init() {
         String browser =
@@ -37,6 +44,18 @@ public class ApplicationManager {
 
     public void stop() {
         wd.quit();
+    }
+
+    public void takeScreenshot() {
+       File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+       File screenshot = new File("src/test/screenshots/screen-"+System.currentTimeMillis()+".png");
+        try {
+            Files.copy(tmp, screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
+//        logger.info(("\n\nCreated screenshot: "+ screenshot.getAbsolutePath()));
     }
 
     public BoardHelper getBoard() {

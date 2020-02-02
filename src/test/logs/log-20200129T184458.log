@@ -1,0 +1,11 @@
+2020-01-29 18:45:09,225 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testChangeAvatarwith parameters []
+2020-01-29 18:46:07,811 INFO [Test worker] c.o.t.t.TestBase [ChangeUserAvatarTest.java:25] avatar before:
+2020-01-29 18:46:31,946 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testChangeAvatar Failed
+2020-01-29 18:46:31,947 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : C:\Users\Home\Documents\GitHub\trello_selenium_tests1-9\src\test\resources\mem_roma_31_08072220
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60541}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 338ccc32a824af4d99d1ed1133c95438
+2020-01-29 18:46:32,293 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testChangeAvatar

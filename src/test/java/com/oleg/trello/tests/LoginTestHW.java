@@ -16,7 +16,7 @@ public class LoginTestHW extends TestBase {
     public void testLogInWithAtlassianAcc() throws InterruptedException {
         app.getSession().clickLoginLink();
         app.getSession().fillLoginFormAtlassianAcc("qaolegtest@gmail.com", "qa221988");
-        app.getSession().pause(20000);
+        app.getSession().pause(10000);
         Assert.assertTrue
                 (app.getSession().isAvatarPresentOnHeader());
     }

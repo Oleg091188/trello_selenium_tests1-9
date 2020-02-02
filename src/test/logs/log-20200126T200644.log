@@ -1,0 +1,12 @@
+2020-01-26 20:06:52,484 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testLogInWithAtlassianAccwith parameters []
+2020-01-26 20:07:30,810 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testLogInWithAtlassianAcc Failed
+2020-01-26 20:07:30,811 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#logi"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.1.26', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e6dd128108742b3f2a2e5e0ba26c85d0
+*** Element info: {Using=id, value=logi}
+2020-01-26 20:07:31,196 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testLogInWithAtlassianAcc

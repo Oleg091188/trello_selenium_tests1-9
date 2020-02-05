@@ -43,5 +43,13 @@ task testAll(type: Test) {
             systemProperty 'browser', "${browser}"
         }
     }
+    task testtrello(type: Test) {
+        useTestNG {
+            suites 'src/test/resources/testtrello.xml'
+        }
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', "${browser}"
+        }
+    }
 
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="testtrello" verbose="1" >
+    <test name="test" >
+        <classes>
+            <class name="com.oleg.trello.tests.LoginTestHW" />
+            <class name="com.oleg.trello.tests.LoginTest" />
+            <class name="com.oleg.trello.tests.BoardCreationTests" />
+            <class name="com.oleg.trello.tests.DeletionBoard" />
+            <class name="com.oleg.trello.tests.TeamCreationTests" />
+            <class name="com.oleg.trello.tests.TeamModificationTests" />
+            <class name="com.oleg.trello.tests.TeamDeletionTests" />
+            <class name="com.oleg.trello.tests.ChangeUserAvatarTest" />
+
+        </classes>
+    </test>
+</suite>

@@ -21,7 +21,7 @@ public class SessionHelper extends HelperBase{
         click(By.id("login"));
         click(By.id("login-submit"));
         Thread.sleep(10000);
-        type(By.id("password"), pwd);
+        type(By.id("input[id=password]"), pwd);
         click(By.id("login-submit"));
     }
 

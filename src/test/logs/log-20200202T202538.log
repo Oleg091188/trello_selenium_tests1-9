@@ -1,0 +1,105 @@
+2020-02-02 20:25:48,173 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testBoardCreationFromHeaderwith parameters [com.oleg.trello.model.BoardData@7669ccab]
+2020-02-02 20:26:48,715 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testBoardCreationFromHeader Failed
+2020-02-02 20:26:48,717 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=//*[@class='icon-lg icon-member']/../../..//li}
+2020-02-02 20:26:49,103 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testBoardCreationFromHeader
+2020-02-02 20:26:49,104 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testBoardCreationFromHeaderwith parameters [com.oleg.trello.model.BoardData@2ed0b543]
+2020-02-02 20:26:49,167 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testBoardCreationFromHeader Failed
+2020-02-02 20:26:49,168 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=//*[@class='icon-lg icon-member']/../../..//li}
+2020-02-02 20:26:49,487 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testBoardCreationFromHeader
+2020-02-02 20:26:49,488 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testBoardCreationFromHeaderwith parameters [com.oleg.trello.model.BoardData@70aa92d5]
+2020-02-02 20:26:49,554 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testBoardCreationFromHeader Failed
+2020-02-02 20:26:49,555 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=//*[@class='icon-lg icon-member']/../../..//li}
+2020-02-02 20:26:49,907 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testBoardCreationFromHeader
+2020-02-02 20:26:49,908 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testBoardCreationFromHeaderwith parameters [com.oleg.trello.model.BoardData@387cf26c]
+2020-02-02 20:26:50,008 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testBoardCreationFromHeader Failed
+2020-02-02 20:26:50,009 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=//*[@class='icon-lg icon-member']/../../..//li}
+2020-02-02 20:26:50,351 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testBoardCreationFromHeader
+2020-02-02 20:26:50,400 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testChangeAvatarwith parameters []
+2020-02-02 20:26:50,440 INFO [Test worker] c.o.t.t.TestBase [ChangeUserAvatarTest.java:25] avatar before:
+2020-02-02 20:27:30,192 INFO [Test worker] c.o.t.t.TestBase [ChangeUserAvatarTest.java:31] avatar after:
+2020-02-02 20:27:30,614 INFO [Test worker] c.o.t.u.Listener [Listener.java:19] testChangeAvatar Passed Successful
+2020-02-02 20:27:30,618 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testChangeAvatar
+2020-02-02 20:27:30,626 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testFirstBoardDeletion1with parameters []
+2020-02-02 20:27:30,694 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testLogInwith parameters []
+2020-02-02 20:27:45,722 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] testLogIn Failed
+2020-02-02 20:27:45,724 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[href='/login']"}
+  (Session info: chrome=79.0.3945.117)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=[href='/login']}
+2020-02-02 20:27:46,071 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testLogIn
+2020-02-02 20:27:46,072 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test testLogInWithAtlassianAccwith parameters []
+2020-02-02 20:28:28,249 INFO [Test worker] c.o.t.u.Listener [Listener.java:19] testLogInWithAtlassianAcc Passed Successful
+2020-02-02 20:28:28,250 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test testLogInWithAtlassianAcc
+2020-02-02 20:28:28,252 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test teamCreationTestFromHeaderwith parameters []
+2020-02-02 20:29:20,366 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeader Failed
+2020-02-02 20:29:20,367 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] java.lang.AssertionError: expected [1] but found [0]
+2020-02-02 20:29:20,707 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test teamCreationTestFromHeader
+2020-02-02 20:29:20,765 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test teamCreationTestFromHeaderCSVwith parameters [com.oleg.trello.model.TeamData@61c30ff4]
+2020-02-02 20:30:12,221 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeaderCSV Failed
+2020-02-02 20:30:12,222 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] java.lang.AssertionError: expected [1] but found [0]
+2020-02-02 20:30:12,552 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test teamCreationTestFromHeaderCSV
+2020-02-02 20:30:12,553 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test teamCreationTestFromHeaderCSVwith parameters [com.oleg.trello.model.TeamData@6c4fee61]
+2020-02-02 20:31:03,972 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeaderCSV Failed
+2020-02-02 20:31:03,973 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] java.lang.AssertionError: expected [1] but found [0]
+2020-02-02 20:31:04,346 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test teamCreationTestFromHeaderCSV
+2020-02-02 20:31:04,346 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test teamCreationTestFromHeaderCSVwith parameters [com.oleg.trello.model.TeamData@17735738]
+2020-02-02 20:31:56,691 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeaderCSV Failed
+2020-02-02 20:31:56,692 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] java.lang.AssertionError: expected [1] but found [0]
+2020-02-02 20:31:57,025 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:27] Stop Test teamCreationTestFromHeaderCSV
+2020-02-02 20:31:57,028 INFO [Test worker] c.o.t.t.TestBase [TestBase.java:21] Start Test teamCreationTestFromHeaderWithDPwith parameters [name DP, description DP]
+2020-02-02 20:32:21,957 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeaderWithDP Failed
+2020-02-02 20:32:21,957 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964
+*** Element info: {Using=css selector, value=[data-test-id='header-create-menu-button']}
+2020-02-02 20:32:21,965 ERROR [Test worker] c.o.t.u.Listener [Listener.java:26] teamCreationTestFromHeaderWithDP Failed
+2020-02-02 20:32:21,966 ERROR [Test worker] c.o.t.u.Listener [Listener.java:27] org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HOME-ПК', ip: '192.168.43.41', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\Home\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f561d61b61a6837aee549ddffdacf964

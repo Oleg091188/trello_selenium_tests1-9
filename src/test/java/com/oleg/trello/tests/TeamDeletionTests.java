@@ -24,6 +24,7 @@ public class TeamDeletionTests extends TestBase {
         Thread.sleep(5000);
         int TeamCountAfter = app.getTeam().getTeamsCount();
         Assert.assertEquals(TeamCountAfter, countCountBefore - 1);
+        app.getHeader().returnToHomePage();
 
 
     }

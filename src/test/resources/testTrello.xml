@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="testtrello" verbose="1" >
+<suite name="testTrello" verbose="1" >
     <test name="test" >
         <classes>
             <class name="com.oleg.trello.tests.LoginTestHW" />

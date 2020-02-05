@@ -49,14 +49,14 @@ public class SessionHelper extends HelperBase{
         type(By.id("user"), "qaolegtest@gmail.com");
         Thread.sleep(10000);
         if (wd.findElement(By.id("password")).isDisplayed()) {
-            type(By.id("password"), "qa221988");
+            type(By.id("input[id=password]"), "qa221988");
         }
         click(By.id("login"));
 
         if (isElementPresent(By.id("login-submit"))) {
             click(By.id("login-submit"));
 
-            type(By.id("password"), "qa221988");
+            type(By.id("input[id=password]"), "qa221988");
             click(By.id("login-submit"));
         }
     }
